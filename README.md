@@ -1,2 +1,3 @@
-# nvim
-nvim config
+# nvim config
+
+Clone the in `~/.config` directory
