@@ -1,5 +1,9 @@
 # Cheetsheet
 
+## How to practice
+Open nvim, type `:Tutor`. Grind. 
+
+## Theory
 4 modes `normal`, `command`, `insert`, `visual`.
 
 ## Mode switching
