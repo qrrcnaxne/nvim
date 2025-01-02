@@ -1,67 +1,96 @@
 # Cheetsheet
 
-## Basics
-* `ecs`: from anywhere to normal mode
+4 modes `normal`, `command`, `insert`, `visual`.
+
+## Mode switching
+* `<ecs>`: from anywhere to normal mode
 * `:`: from normal to command mode 
 * `v`: from normal to visual
 * `C-v`: from normal to visual block
 * `V`: from normal to visual line
-* ``: 
-* ``: 
-* ``: 
-* ``: 
 
 
-
-## Basic Navigation
-Used in Normal mode
+## Navigation
+Use in Normal mode
+### Character
 * `h`: ←
 * `j`: ↓
 * `k`: ↑
 * `l`: →
-* `w`: → start of word
-* `b`: ← start of word
-* `e`: → end of word
-* `$`: → end of line
-* `0`: → start of line
-* `^`: ← first non empty character of line
-* `f<char>`: → next `<char>` in the line 
-* `F<char>`: ← previous `<char>` in the line
+
+### Word
+* `w`: → start
+* `b`: ← start
+* `e`: → end
+
+### Line
+* `$`: → end
+* `0`: → start
+* `^`: ← first non empty character
+* `f<char>`: → next `<char>`
+* `F<char>`: ← previous `<char>`
+
+### Bulk
 * `(`: ↑ 1 "sentence" 
 * `)`: ↓ 1 "sentence" 
 * `{`: ↑ 1 "paragraph"
 * `}`: ↓ 1 "paragraph"
-* `gg`: ↑ start of "file"
-* `G`: ↓ end of "file"
+
+### File
+* `gg`: ↑ start
+* `G`: ↓ end
+
+### Page
 * `C-u`: ↑ half "page" 
 * `C-d`: ↓ half "page"
 * `C-b`: ↑ full "page"
 * `C-f`: ↓ full "page"
+
+### Screen
 * `C-e`: ↓ screen
 * `C-y`: ↑ screen
 
 
-## Insert modes
+## Insert
+From normal mode to insert mode
+
+### Character
 * `i`: current position
 * `a`: next position
+
+### Line
 * `I`: start of line
 * `A`: end of line
 * `o`: next line
 * `O`: previous line
-* `ce` or `cw`: change till end of word
-* `c$` or `C`: change till end of line
-* `cc`: change entire line
+
+## Change
+In normal mode, change
+
+### Character
 * `s`: replace character and enter insert mode
 * `r`: replace character and stay in normal mode
-* `R`: replace characters till `ecs` is pressed and stay in normal mode
-* `y`: yank (copy in nvim buffer)
-* `yy`: yank entire line including `\n` (copy in nvim buffer) 
-* `p`: paste (from nvim buffer)
-* `u`: undo (from nvim buffer)
-* `C-r`: redo (from nvim buffer)
-* `d`: delete (use with navigation keys) 
 
-## find 
+### Word
+* `ce` or `cw`: change till end
+
+### Line
+* `R`: replace characters till `ecs` is pressed and stay in normal mode
+* `c$` or `C`: change till end of line
+* `cc`: change entire line
+
+## Copy - Paste
+Can be in visual or normal mode. Happens in nvim register, which are separate from system clipboard. 
+* `y`: yank (copy)
+* `yy`: yank entire line including `\n` 
+* `p`: paste 
+
+## Undo, Redo, Delete
+* `u`: undo 
+* `C-r`: redo 
+* `d`: delete  
+
+## Find 
 * `/`: type and search and highlight 
 * `n`: move to next search match 
 * `N`: move to previous search match
