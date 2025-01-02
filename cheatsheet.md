@@ -1,7 +1,8 @@
 # Cheetsheet
 
 ## How to practice
-Open nvim, type `:Tutor`. Grind. 
+* Open nvim, type `:Tutor`. Grind.
+* Outside of that, it is often helpful to build muscle memory only with a certain function. For example, switch between insert and normal mode and navigate only using h, j, k, l, and insert text like a regular text editor, use no other feature.
 
 ## Theory
 4 modes `normal`, `command`, `insert`, `visual`.
@@ -55,6 +56,7 @@ Use in Normal mode
 * `C-y`: ↑ screen
 
 
+
 ## Insert
 From normal mode to insert mode
 
@@ -92,14 +94,34 @@ Can be in visual or normal mode. Happens in nvim register, which are separate fr
 ## Undo, Redo, Delete
 * `u`: undo 
 * `C-r`: redo 
-* `d`: delete  
+* `x`: delete character
+* `d`: delete with navigation. `dw` for delete word, `dd` for delete line, etc. 
+
+* `n`: next match
+* `N`: previous match
 
 ## Find 
 * `/`: type and search and highlight 
+* `?`: search backwards
 * `n`: move to next search match 
 * `N`: move to previous search match
 * `*`: search till end of word under cursor and highlight
 * `#`: search till start of word under cursor and highlight
+* `%`: move between matching (), [] and {}
+
+## Replace
+
+### Line
+* `:/old/new`: first occurance
+* `:/old/new/g`: all occurances
+
+### Bulk
+* `#,#s/old/new/g`: `#` is line number between which to replace, inclusive of them. 
+
+### File
+* `:%s/old/new/g`: without prompt
+* `:%s/old/new/gc`: with prompt
+
 
 ## Bookmarks
 * `m<bookmark key>`: bookmarks letter under the cursor as `<bookmark key>`
