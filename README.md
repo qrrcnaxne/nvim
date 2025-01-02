@@ -1,3 +1,3 @@
 # nvim config
 
-Clone the in `~/.config` directory
+Clone the repo in `~/.config` directory

@@ -1,4 +1,3 @@
-
 local set = vim.opt
 local keymap = vim.keymap.set
 local cmd = vim.cmd
@@ -21,7 +20,6 @@ set.swapfile = false
 
 -- some shortcuts
 keymap('n', '<leader>q', cmd.Ex)
-keymap('n', '<leader>z', cmd.so)
 keymap('c', 'Q', 'q')
 
 -- Navigate vim panes better
