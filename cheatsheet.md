@@ -126,4 +126,4 @@ Can be in visual or normal mode. Happens in nvim register, which are separate fr
 ## Bookmarks
 * `m<bookmark key>`: bookmarks letter under the cursor as `<bookmark key>`
 * `` `<bookmark key>``: move to bookmarked position marked by `<bookmark key>` 
- 
+ w
