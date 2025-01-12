@@ -2,7 +2,7 @@
 
 ## How to practice
 * Open nvim, type `:Tutor`. Grind.
-* Outside of that, it is often helpful to build muscle memory only with a certain function. For example, switch between insert and normal mode and navigate only using h, j, k, l, and insert text like a regular text editor, use no other feature.
+* Outside of that, it is often helpful to build muscle memory only with a certain function. For example, switch between insert and normal mode and navigate only using h, j, k, l, and insert text like a regular text editor, use no other features.
 
 ## Theory
 4 modes `normal`, `command`, `insert`, `visual`.
@@ -126,4 +126,3 @@ Can be in visual or normal mode. Happens in nvim register, which are separate fr
 ## Bookmarks
 * `m<bookmark key>`: bookmarks letter under the cursor as `<bookmark key>`
 * `` `<bookmark key>``: move to bookmarked position marked by `<bookmark key>` 
- w

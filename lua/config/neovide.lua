@@ -1,7 +1,7 @@
 local function check_neovide()
     if vim.g.neovide then
         -- print('ooooo')
-        vim.g.neovide_transparency = 0.9
+        vim.g.neovide_transparency = 0.8
         vim.g.neovide_normal_opacity = 1
         vim.g.neovide_cursor_vfx_mode = "pixiedust"
         vim.g.neovide_cursor_vfx_particle_density = 50.0

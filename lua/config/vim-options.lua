@@ -1,45 +1,55 @@
+-- Vim options
 local set = vim.opt
-local keymap = vim.keymap.set
-local cmd = vim.cmd
 
+-- Vim options 
+
+-- Set number and relative numbers 
 set.number = true
 set.relativenumber = true
 
+-- Set tab= 4 spaces 
 local tab = 4
-
 set.tabstop = tab
 set.softtabstop = tab
 set.shiftwidth = tab
 set.expandtab = true
 
-set.smartindent = true
+-- wrap lines without breaking words
 set.wrap = false
 set.linebreak = true
 
+-- Indent based on language
+set.smartindent = true
+set.breakindent = true
+
+-- Disable swap
 set.swapfile = false
 
-set.scrolloff = 4
+-- keep 4 lines up and down when scrolling
+set.scrolloff = 10
+
+-- Length of suggestions
 set.pumheight = 5
-set.breakindent = true
+
+-- Preservce undo history across sessions
 set.undofile = true
 
--- sync vim and system clipboards
-set.clipboard = 'unnamedplus'
+-- Sync vim and system clipboards
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
 
--- some shortcuts
-keymap('n', '<leader>q', cmd.Ex)
-keymap('c', 'Q', 'q')
+vim.g.have_nerd_font = true 
 
--- Navigate vim panes better
--- keymap('n', '<c-k>', ':wincmd k<CR>')
--- keymap('n', '<c-j>', ':wincmd j<CR>')
--- keymap('n', '<c-h>', ':wincmd h<CR>')
--- keymap('n', '<c-l>', ':wincmd l<CR>')
--- keymap('n', '<leader>h', ':nohlsearch<CR>')
+-- Resizing splits with mouse, remove if not used
+vim.opt.mouse = 'a'
 
-vim.cmd [[
- highlight Normal guibg=none
- highlight NonText guibg=none
- highlight Normal ctermbg=none
- highlight NonText ctermbg=none
-]]
+-- Doesn't show mode, idk where
+vim.opt.showmode = false
+
+-- For LSP warnings and errors 
+vim.opt.signcolumn = 'yes:2'
+
+-- Highlight line on which cursor
+vim.opt.cursorline = true
+
