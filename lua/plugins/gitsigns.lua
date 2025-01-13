@@ -1,3 +1,5 @@
+-- Displays git file changed signs per line
+
 return {
     'lewis6991/gitsigns.nvim',
     opts = {

@@ -1,3 +1,5 @@
+-- Inserts matching closing brace, <CR> to new line and indent 
+
 return {
     'windwp/nvim-autopairs',
     event = "InsertEnter",

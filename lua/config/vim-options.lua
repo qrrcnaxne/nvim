@@ -52,4 +52,3 @@ vim.opt.signcolumn = 'yes:2'
 
 -- Highlight line on which cursor
 vim.opt.cursorline = true
-

@@ -1,4 +1,4 @@
--- Copied from kickstart
+-- LSP config, opied from kickstart
 
 return {
     -- Main LSP Configuration

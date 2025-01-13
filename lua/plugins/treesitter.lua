@@ -1,3 +1,5 @@
+-- Highlighting based on AST
+
 return {
 	"nvim-treesitter/nvim-treesitter",
 	enabled = true,

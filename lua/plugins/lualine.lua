@@ -1,3 +1,5 @@
+-- Horizontal line at the bottom telling mode and stuff. 
+
 return {
   'nvim-lualine/lualine.nvim',
   enabled = true,

@@ -1,3 +1,5 @@
+-- Hints about shortcuts in command mode
+
 return {
   "folke/which-key.nvim",
   enabled = true,

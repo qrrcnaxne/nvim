@@ -1,3 +1,5 @@
+-- Highlights stuff lke TODO from comments
+
 return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },

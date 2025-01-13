@@ -1,3 +1,5 @@
+-- Fuzzy find files in cwd
+
 return {
     'nvim-telescope/telescope.nvim', 
     event = 'VimEnter',

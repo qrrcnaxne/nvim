@@ -1,3 +1,5 @@
+-- Terminal in neovim
+
 return {
     's1n7ax/nvim-terminal',
     config = function()
