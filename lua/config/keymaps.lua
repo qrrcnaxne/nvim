@@ -23,4 +23,4 @@ keymap("n", "n", "nzzzv")
 keymap("n", "N", "Nzzzv")
 
 -- Backspace removes the word in insert mode
-keymap("i", "<C-BS>", "<ecs>diw<CR>",  {noremap = true})
+-- keymap("i", "<C-BS>", "<ecs>diw<CR>",  {noremap = true})

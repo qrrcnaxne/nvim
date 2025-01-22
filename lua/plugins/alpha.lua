@@ -10,7 +10,7 @@ return {
       local alpha = require 'alpha'
       local dashboard = require 'alpha.themes.startify'
 
-      dashboard.section.header.opts.position = "center"
+      -- dashboard.section.header.opts.position = "center"
       dashboard.section.header.val = {
         [[                                                    ]],
         [[ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ]],

@@ -2,7 +2,7 @@
 
 return { -- Autocompletion
 'hrsh7th/nvim-cmp',
-event = 'InsertEnter',
+-- event = 'InsertEnter',
 dependencies = {
   -- Snippet Engine & its associated nvim-cmp source
   {
@@ -67,7 +67,9 @@ config = function()
       -- Accept ([y]es) the completion.
       --  This will auto-import if your LSP supports it.
       --  This will expand snippets if the LSP sent a snippet.
-      ['<C-y>'] = cmp.mapping.confirm { select = true },
+      -- ['<C-y>'] = cmp.mapping.confirm { select = true },
+      ['<C-CR'] = cmp.mapping.confirm { select = true },
+      ['<C-tab'] = cmp.mapping.confirm { select = true },
 
       -- If you prefer more traditional completion keymaps,
       -- you can uncomment the following lines
